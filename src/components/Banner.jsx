@@ -34,27 +34,17 @@ const Banner = () => {
         backgroundPosition: "center center ",
       }}
     >
+
       <div className="banner__contents">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">{movie?.title || movie?.original_name }</h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
         <h2 className="banner__description">
           {truncate(
-            `the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch
-          the description for the movie you being watch`,
-            150
+            movie?.overview,
+            180
           )}
         </h2>
       </div>
