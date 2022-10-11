@@ -5,7 +5,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
 
   const baseUrl_img = "https://image.tmdb.org/t/p/original";
-  console.log("fetch", fetchURL);
+ 
 
   useEffect(() => {
     async function fetchData() {
@@ -17,7 +17,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {
     fetchData();
   }, [fetchURL]);
 
-  console.log(movies);
+
 
   return (
     <div className="row">
