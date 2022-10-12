@@ -29,7 +29,7 @@ const Banner = () => {
     <header
       className="banner"
       style={{
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.436), rgba(0, 0, 0, 0.173)), url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundSize: "cover ",
         backgroundPosition: "center center ",
       }}
@@ -48,7 +48,7 @@ const Banner = () => {
           )}
         </h2>
       </div>
-      <div className="banner--fadeBottom" />
+      {/* <div className="banner--fadeBottom" /> */}
     </header>
   );
 };

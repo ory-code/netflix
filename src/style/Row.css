@@ -1,7 +1,7 @@
 .row {
     color: #fff;
     margin-left: 20px;
-    margin: 25px 0 25px 20px;
+    margin-top: 20px;
 
 }
 
@@ -9,7 +9,7 @@
 display: flex;
 overflow-y: hidden;
 overflow-x: scroll;
-margin: 15px;
+
 padding: 25px 15px;
 }
 
